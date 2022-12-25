@@ -4,6 +4,7 @@ ekleDOM.addEventListener("click", newElement)
 
 const alertDOM= document.querySelector("#alert")
 
+
 const alertFunction = (baslik, message, className="warning") => `
 <div class="alert alert-${className} alert-dismissible fade show" role="alert">
   <strong>${baslik}</strong> ${message}
@@ -15,7 +16,7 @@ const alertFunction = (baslik, message, className="warning") => `
 
 function newElement(event){ 
     event.preventDefault()
-    const item = document.querySelector('#task')
+    const item = document.querySelector('#task');
     if (item.value){
         addItem(item.value)
         item.value= ""
@@ -51,16 +52,10 @@ const addItem = (Item) => {
         target.removeChild(this.parentElement);
     }
 }
-
+    liDOM.onclick = function () {
+        liDOM.classList.toggle('checked');
+}
 }
 
-const element= document.querySelector('li')
 
-element.addEventListener("click", check)
-
-function check(event){
-    event.preventDefault()
-    element.classList.toggle("checked")
-
-}
 
