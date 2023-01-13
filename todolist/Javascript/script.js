@@ -21,14 +21,14 @@ function newElement(event){
         addItem(item.value)
         item.value= ""
         alertDOM.innerHTML = alertFunction(
-            "Tebrikler!",
-            "Listeye eklendi.",
+            "Nice!",
+            "Task added :)",
             "success"
         )
     } else {
         alertDOM.innerHTML = alertFunction(
-            "Dikkat!",
-            "Bilgi girmeniz gerekli.",
+            "Oops!",
+            "Please write a task",
             "danger"
         )
     }

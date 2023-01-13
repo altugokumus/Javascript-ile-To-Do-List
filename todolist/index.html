@@ -11,7 +11,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <title>Yapılacaklar Listesi</title>
+    <title>To do list</title>
   </head>
   <body>
     <div ></div>
@@ -35,7 +35,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="toast-body">Listeye eklendi.</div>
+          <div class="toast-body">Task added!</div>
         </div>
       </div>
     </div>
@@ -59,21 +59,21 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="toast-body">Listeye boş ekleme yapamazsınız!</div>
+          <div class="toast-body">Please add task!</div>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="header">
         <img
-          src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
-          class="mb-1"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e0916de5-e73b-4979-b4f9-63696680162b/dcewrof-ce750e34-73d8-47bb-9510-3a4a7582b3c2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZTA5MTZkZTUtZTczYi00OTc5LWI0ZjktNjM2OTY2ODAxNjJiXC9kY2V3cm9mLWNlNzUwZTM0LTczZDgtNDdiYi05NTEwLTNhNGE3NTgyYjNjMi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-tXifUZJEz0NJ2bPsDq5yynQI7P3LTrc4pd_QgGmILI"
+          class="mb-3 mt-3"
           alt=""
         />
-        <h2>Yapılacaklar Listesi</h2>
-        <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+        <h2></h2>
+        <input class="mb-3" type="text" id="task" placeholder="What you will do?" />
         <span onclick="newElement()" id="liveToastBtn" class="button"
-          >Ekle</span>
+          >Add</span>
       </div>
 
       <ul id="list">
